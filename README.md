@@ -1,12 +1,4 @@
 # Python-FullStack-Learning  
-
-Hello Hello
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
     <head>
