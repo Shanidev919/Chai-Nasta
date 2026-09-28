@@ -13,6 +13,9 @@
             <p id="demo1"><mark>JavaScript can hide HTML elements. Click  Hide. </mark></p>
         <button onclick="document.getElementById('myImage').src='bulbon.png'">Turn On Light</button>
         <img id="myImage" src="bulboff.png" style="width: 100px;">
+
+
+        
         <button onclick="document.getElementById('myImage').src='bulboff.png'">Turn Off Light</button>
         <button onclick="document.getElementById('demo').style.fontSize='35px'">Click_change _size</button>
         <button onclick="document.getElementById('demo1').style.display='none'">Click Hide</button>
