@@ -16,6 +16,9 @@
 
 
         
+
+
+        
         <button onclick="document.getElementById('myImage').src='bulboff.png'">Turn Off Light</button>
         <button onclick="document.getElementById('demo').style.fontSize='35px'">Click_change _size</button>
         <button onclick="document.getElementById('demo1').style.display='none'">Click Hide</button>
