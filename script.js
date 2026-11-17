@@ -37,10 +37,10 @@ const biscuitNames = [
 
 const biscuitImages = [
   "Parle-G.jpg", "Good Day.jpg", "Marie Gold.jpg", "Oreo.jpg",
-  "Hide & Seek.jpg", "bourbon.jpg", "Jim Jam.jpg", "monaco.jpg",
-  "krackjack.jpg", "50-50.jpg", "Milk Bikis.jpg", "Little Hearts.jpg",
-  "Dark Fantasy.jpg", "treat.jpg", "Nice Time.jpg", "digestive.jpg",
-  "Butter cookies.jpg", "Coconut Cookies.jpg", "Jeera Biscuits.jpg",
+  "Hide & Seek.jpg", "Bourbon.jpg", "Jim Jam.jpg", "Monaco.jpg",
+  "KrackJack.jpg", "50-50.jpg", "Milk Bikis.jpg", "Little Hearts.jpg",
+  "Dark Fantasy.jpg", "Treat.jpg", "Nice Time.jpg", "Digestive.jpg",
+  "Butter Cookies.jpg", "Coconut Cookies.jpg", "Jeera Biscuits.jpg",
   "Salted Biscuits.jpg"
 ];
 
@@ -72,8 +72,8 @@ const namkeenImages = [
   "Aloo Bhujia.jpg", "Plain Bhujia.jpg", "Nylon Sev.jpg",
   "Ratlam Sev.jpg", "Tikha Mixture.jpg", "Navratan Mixture.jpg",
   "Khatta Meetha.jpg", "Moong Dal.jpg", "Chana Dal.jpg",
-  "Masala Peanuts.jpg", "boondi.jpg", "Masala Boondi.jpg",
-  "Cornflakes Mixture.jpg", "chivda.jpg", "Poha Chivda.jpg",
+  "Masala Peanuts.jpg", "Boondi.jpg", "Masala Boondi.jpg",
+  "Cornflakes Mixture.jpg", "Chivda.jpg", "Poha Chivda.jpg",
   "Bikaneri Bhujia.jpg", "Dal Moth.jpg", "Punjabi Tadka.jpg",
   "Masala Fryums.jpg"
 ];
