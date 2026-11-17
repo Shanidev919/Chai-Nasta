@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai Nasta Corner | Fresh Chai & Delicious Nasta</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">
+      <i class="bi bi-cup-hot-fill"></i> Chai Nasta Corner
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#food">Food</a></li>
+        <li class="nav-item"><a class="nav-link" href="#drinks">Tea & Coffee</a></li>
+        <li class="nav-item"><a class="nav-link" href="#biscuits">Biscuits</a></li>
+        <li class="nav-item"><a class="nav-link" href="#namkeen">Namkeen</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-warning position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+            <i class="bi bi-cart3"></i> Cart
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero-section" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge">Welcome to Chai Nasta Corner</span>
+      <h1>Fresh Chai & <span>Delicious Nasta</span> Every Day!</h1>
+      <p>
+        Enjoy hot samosa, crispy pakode, tasty burgers, sandwiches,
+        fresh tea, coffee, biscuits and delicious namkeen.
+      </p>
+      <div class="d-flex flex-wrap gap-3">
+        <a href="#food" class="btn btn-warning btn-lg">Explore Menu</a>
+        <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+      </div>
+      <div class="hero-features">
+        <span><i class="bi bi-check-circle-fill"></i> Fresh Food</span>
+        <span><i class="bi bi-check-circle-fill"></i> Great Taste</span>
+        <span><i class="bi bi-check-circle-fill"></i> Best Prices</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BENEFITS -->
+<section class="benefit-strip">
+  <div class="container">
+    <div class="row g-3 text-center">
+      <div class="col-6 col-md-3"><i class="bi bi-cup-hot"></i><h6>Fresh Chai</h6></div>
+      <div class="col-6 col-md-3"><i class="bi bi-egg-fried"></i><h6>Hot Snacks</h6></div>
+      <div class="col-6 col-md-3"><i class="bi bi-star"></i><h6>Quality Taste</h6></div>
+      <div class="col-6 col-md-3"><i class="bi bi-wallet2"></i><h6>Affordable Price</h6></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH -->
+<section class="search-section">
+  <div class="container">
+    <div class="search-box">
+      <i class="bi bi-search"></i>
+      <input type="search" id="searchInput" placeholder="Search samosa, chai, biscuits, namkeen...">
+      <button id="clearSearch" type="button">Clear</button>
+    </div>
+    <p id="searchMessage" class="text-center mt-2 mb-0"></p>
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="section-space" id="food">
+  <div class="container">
+    <div class="section-heading">
+      <span>Fresh & Tasty</span>
+      <h2>Our Food Menu</h2>
+      <p>Delicious snacks made for every mood.</p>
+    </div>
+    <div class="row g-4" id="foodGrid"></div>
+  </div>
+</section>
+
+<!-- DRINKS -->
+<section class="section-space section-light" id="drinks">
+  <div class="container">
+    <div class="section-heading">
+      <span>Hot & Refreshing</span>
+      <h2>Tea & Coffee</h2>
+      <p>Your favourite cup of happiness.</p>
+    </div>
+    <div class="row g-4" id="drinksGrid"></div>
+  </div>
+</section>
+
+<!-- BISCUITS -->
+<section class="section-space" id="biscuits">
+  <div class="container">
+    <div class="section-heading">
+      <span>Sweet & Crunchy</span>
+      <h2>Biscuits Collection</h2>
+      <p>Choose your favourite biscuit pack.</p>
+    </div>
+    <div class="row g-4" id="biscuitGrid"></div>
+  </div>
+</section>
+
+<!-- NAMKEEN -->
+<section class="section-space section-light" id="namkeen">
+  <div class="container">
+    <div class="section-heading">
+      <span>Spicy & Crunchy</span>
+      <h2>Namkeen Collection</h2>
+      <p>Enjoy delicious Indian namkeen varieties.</p>
+    </div>
+    <div class="row g-4" id="namkeenGrid"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section-space about-section" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <img src="images/food/samosa.jpg" class="about-image" alt="Fresh snacks"
+             onerror="this.style.display='none'">
+      </div>
+      <div class="col-lg-6">
+        <span class="section-kicker">Our Story</span>
+        <h2>Welcome to Chai Nasta Corner</h2>
+        <p>
+          We bring together the taste of fresh Indian snacks, delicious tea,
+          coffee, biscuits and namkeen. Our goal is to serve tasty food at
+          affordable prices.
+        </p>
+        <ul class="about-list">
+          <li><i class="bi bi-check-circle-fill"></i> Freshly prepared snacks</li>
+          <li><i class="bi bi-check-circle-fill"></i> Wide variety of tea and coffee</li>
+          <li><i class="bi bi-check-circle-fill"></i> Affordable prices</li>
+          <li><i class="bi bi-check-circle-fill"></i> Friendly service</li>
+        </ul>
+        <a href="#food" class="btn btn-warning mt-3">Explore Our Menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section-space contact-section" id="contact">
+  <div class="container">
+    <div class="section-heading">
+      <span>Get In Touch</span>
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="contact-card">
+          <i class="bi bi-geo-alt-fill"></i>
+          <h5>Our Location</h5>
+          <p>Update your shop address here</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-card">
+          <i class="bi bi-telephone-fill"></i>
+          <h5>Phone Number</h5>
+          <p>Update your phone number here</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-card">
+          <i class="bi bi-clock-fill"></i>
+          <h5>Opening Hours</h5>
+          <p>Update your shop timings here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h4><i class="bi bi-cup-hot-fill"></i> Chai Nasta Corner</h4>
+        <p>Fresh chai, delicious snacks and happy moments.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5>Quick Links</h5>
+        <a href="#home">Home</a>
+        <a href="#food">Food</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center mb-0">© <span id="currentYear"></span> Chai Nasta Corner. All Rights Reserved  By.</p>
+  </div>
+</footer>
+
+<!-- CART OFFCANVAS -->
+<div class="offcanvas offcanvas-end cart-panel" tabindex="-1" id="cartCanvas">
+  <div class="offcanvas-header">
+    <h5><i class="bi bi-cart3"></i> Your Shopping Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="cartItems"></div>
+    <div class="cart-total">
+      <div class="d-flex justify-content-between">
+        <span>Subtotal</span><strong id="cartSubtotal">₹0</strong>
+      </div>
+      <div class="d-flex justify-content-between">
+        <span>Delivery</span><strong>₹0</strong>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between fs-5">
+        <strong>Total</strong><strong id="cartTotal">₹0</strong>
+      </div>
+      <button class="btn btn-warning w-100 mt-3" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal fade" id="checkoutModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <form id="checkoutForm">
+        <div class="modal-header">
+          <h5 class="modal-title">Customer Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="customerName" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" id="customerPhone" pattern="[0-9]{10}" maxlength="10" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Delivery Address</label>
+            <textarea class="form-control" id="customerAddress" rows="3" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Payment Method</label>
+            <select class="form-select" id="paymentMethod" required>
+              <option value="Cash on Delivery">Cash on Delivery</option>
+              <option value="Demo UPI Payment">Demo UPI Payment</option>
+            </select>
+          </div>
+          <div class="checkout-total">
+            Order Total: <strong id="checkoutTotal">₹0</strong>
+          </div>
+          <small class="text-muted">Demo checkout only. No real payment will be processed.</small>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-warning w-100">Place Order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+      <h3>Order Placed!</h3>
+      <p id="successMessage">Thank you for ordering.</p>
+      <p>Your Order ID: <strong id="orderId"></strong></p>
+      <button class="btn btn-warning" data-bs-dismiss="modal">Continue Shopping</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="appToast" class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">Chai Nasta Corner</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body" id="toastMessage">Product added to cart.</div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
